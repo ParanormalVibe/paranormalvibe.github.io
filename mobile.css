@@ -1,0 +1,51 @@
+@media only screen and (max-width: 1028px) {
+	section {
+		height: auto;
+		padding-bottom: 10em
+	}
+	section > .intro-container > h1 {
+		font-size: 5em;
+		margin-bottom: 5vw;
+	}
+	.portfolio-page {
+		padding-top: 10em;
+	}
+	.fa-github {
+		color: white;
+		font-size: 5em;
+	}
+	.fa-reddit {
+		color: #FF4500;
+		font-size: 5em;
+	}
+	.nav-container {
+		font-size: 2em;
+	}
+	.project-item-container {
+		padding: 0px 0px 0px 0px;
+		text-align: center;
+	}
+	.landing-page > .intro-container > p {
+		font-size: 2em;
+		padding: 0px 0px 0px 0px;
+	}
+	.nav-container > p {
+		font-weight: 700;
+	}
+	.project-item-container > .project-text {
+		text-align: center;
+	}
+	.project-item-container > .project-text > h2 {
+		font-size: 3em;
+	}
+	.project-item-container > .project-text > p {
+		font-size: 2em;
+	}
+	.project-item-container > img {
+		display: none;
+	}
+	.project-item-container > .project-text > .imgcontainer > img {
+		display: block;
+		margin: auto;
+	}
+}
