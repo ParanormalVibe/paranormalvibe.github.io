@@ -101,10 +101,11 @@ section > .intro-container > h1 {
   animation-iteration-count: infinite;
 }
 .project-item-container {
-  text-align: justify;
+  text-align: left;
   margin-top: 15vw;
   padding-left: 25vw;
   padding-right: 25vw;
+  margin-bottom: 15vw;
 }
 .landing-page > .intro-container > p {
   font-size: 2vw;
