@@ -11,7 +11,7 @@ a {
 }
 p {
   color: white;
-  font-family: 'Raleway', sans-serif;
+  font-family: Arial, sans-serif;
   font-weight: 400;
 }
 section {
@@ -29,7 +29,7 @@ section {
 }
 section > .intro-container > h1 {
   color: white;
-  font-family: 'Raleway', sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 6vw;
   font-weight: 600;
   margin-bottom: 5vw;
@@ -117,7 +117,7 @@ section > .intro-container > h1 {
 }
 .project-item-container > .project-text > h2 {
   color: white;
-  font-family: Raleway;
+  font-family: Arial;
   font-weight: 600;
   font-size: 3vw;
 }
