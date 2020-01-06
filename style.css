@@ -43,6 +43,10 @@ section {
   width:100%;
 }
 
+.animate-fade-in {
+  animation:fade-in 1.5s, climb-in 1.5s;
+}
+
 .nav-container {
   animation-duration:1s;
   animation-iteration-count:infinite;
