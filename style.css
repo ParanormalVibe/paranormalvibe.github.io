@@ -1,134 +1,208 @@
+/* General */
 html {
-  scroll-behavior: smooth;
+  scroll-behavior:smooth;
 }
-body {
-  width: 100%;
-  background-color: #15242b;
-  margin: 0;
-}
-a {
-  text-decoration: none;
-}
-p {
-  color: white;
-  font-family: Arial, sans-serif;
-  font-weight: 400;
-}
-section {
-  width: 100%;
-  height: 100vh;
-  min-height: calc(6 * (100vw / 16));
-  text-align: center;
-  position: relative;
-  display: inline-block;
-  animation-name: fade-in;
-  animation-duration: 1s;
-  border-style: dotted;
-  border-width: 0px 0px 1px 0px;
-  border-color: #c42f59;
-}
-section > .intro-container > h1 {
-  color: white;
-  font-family: Arial, sans-serif;
-  font-size: 6vw;
-  font-weight: 600;
-  margin-bottom: 5vw;
-}
-.landing-page::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: url('https://raw.githubusercontent.com/ParanormalVibe/paranormalvibe.github.io/master/bg.jpg');
-  width: 100%;
-  height: 100vh;
-  min-height: calc(6 * (100vw / 16));
-  z-index: -1;
-  filter: blur(5px) brightness(0.85);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.intro-container {
-  position: relative;
-  animation: fade-in 1s, climb-in 1s;
-}
-.bg-fill {
-  background-color: black;
-  opacity: 0.43;
-  width: auto;
-  height: 100%;
-  position: absolute;
-  z-index: -1;
-  margin-left: 20vw;
-  padding-right: 59vw;
-  display: block;
-  filter: blur(50px);
-}
-.social-media-container > * {
-  margin: 1vw;
-}
-.fa-github {
-  color: white;
-  font-size: 3vw;
-}
-.fa-reddit {
-  color: #FF4500;
-  font-size: 3vw;
-}
-.nav-container {
-  font-size: 2vw;
-  width: 100%;
-}
-.nav-container > a {
-  color: white;
-}
-.top-nav {
-  position: absolute;
-  top: 0px;
-  padding-top: 2vw;
-  animation-name: bounce;
-  animation-direction: alternate;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-}
-.bottom-nav {
-  position: absolute;
-  bottom: 0px;
-  padding-bottom: 2vw;
-  animation-name: bounce;
-  animation-direction: alternate-reverse;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-}
-.project-item-container {
-  text-align: left;
-  margin-top: 15vw;
-  padding-left: 25vw;
-  padding-right: 25vw;
-  margin-bottom: 15vw;
-}
-.landing-page > .intro-container > p {
-  font-size: 2vw;
-  padding-left: 20vw;
-  padding-right: 20vw;
-}
-.nav-container > p {
-  font-weight: 700;
-}
-.project-item-container > .project-text > h2 {
-  color: white;
-  font-family: Arial;
-  font-weight: 600;
-  font-size: 3vw;
-}
-.project-item-container > p {
 
+body {
+  background-color:#15242b;
+  margin:0;
+  width:100%;
 }
+
+h1 {
+  color:#FFF;
+  font-family:Arial, sans-serif;
+  font-size:6vw;
+  font-weight:600;
+  margin-bottom:5vw;
+}
+
+a {
+  color:#c42f59;
+  text-decoration:none;
+}
+
+p {
+  color:#FFF;
+  font-family:Arial, sans-serif;
+  font-weight:400;
+}
+
+section {
+  animation-duration:1s;
+  animation-name:fade-in;
+  border-color:#c42f59;
+  border-style:dotted;
+  border-width:0 0 1px;
+  display:inline-block;
+  height:100vh;
+  /* Most narrow aspect ratio height supported is 16:6 */
+  min-height:calc(6*(100vw/16));
+  position:relative;
+  text-align:center;
+  width:100%;
+}
+
+.nav-container {
+  animation-duration:1s;
+  animation-iteration-count:infinite;
+  animation-name:bounce;
+  position:absolute;
+  font-size:2vw;
+  font-weight: 700;
+  width:100%;
+}
+
+.nav-container > a {
+  color:#c42f59;
+  display:inline-block;
+}
+
+.nav-container > a > p {
+  margin-bottom: 0.5em;
+  margin-top: 0.5em
+}
+
+.top-nav {
+  animation-direction:alternate;
+  padding-top:2vw;
+  top:0;
+}
+
+.bottom-nav {
+  animation-direction:alternate-reverse;
+  padding-bottom:2vw;
+  bottom:0;
+}
+
+/* Landing Page */
+.landing-page::before {
+  background-image:url(https://raw.githubusercontent.com/ParanormalVibe/paranormalvibe.github.io/master/bg.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
+  content:"";
+  filter:blur(5px) brightness(0.85);
+  height:100%;
+  left:0;
+  min-height:100%;
+  position:absolute;
+  top:0;
+  width:100%;
+  z-index:-1;
+}
+
+.intro-container {
+  animation:fade-in 1s, climb-in 1s;
+  position:relative;
+}
+
+.intro-message {
+  font-size:2vw;
+  padding-left:20vw;
+  padding-right:20vw;
+}
+
+.content-shadow {
+  background-color:#000;
+  display:block;
+  filter:blur(50px);
+  height:100%;
+  margin-left:20vw;
+  opacity:0.43;
+  padding-right:59vw;
+  position:absolute;
+  width:auto;
+  z-index:-1;
+}
+
+.social-media-container > * {
+  margin:1vw;
+  font-size: 3vw;
+  color: #FFF;
+}
+
+/* Portfolio Page */
+.project-item-container {
+  height:45vh;
+  margin-top:15vw;
+  padding-left:25vw;
+  text-align:left;
+  width:50vw;
+}
+
+/* Animated flipping thing */
+.project-img-container {
+  background-color:transparent;
+  display:block;
+  float:right;
+  height:44vh;
+  margin-left:1.5vw;
+  max-height:400px;
+  perspective:1000px;
+  position:relative;
+}
+
+.project-img-inner {
+  height:100%;
+  position:relative;
+  text-align:center;
+  transform-style:preserve-3d;
+  transition:transform .5s;
+  width:100%;
+}
+
+.scaling-img {
+  max-height:100%;
+  opacity: 0;
+}
+
+.project-img-front,.project-img-back {
+  backface-visibility:hidden;
+  height:100%;
+  left:0;
+  position:absolute;
+  top:0;
+  width:100%;
+}
+
+.project-img-back {
+  background-color:#c42f59;
+  transform:rotateY(180deg);
+}
+
+.project-img-back > p {
+  font-size:2vw;
+  font-weight:700;
+  margin-top:50%;
+}
+
+.project-img-back > p > a {
+  color:#FFF;
+}
+
+.project-img-front > img {
+  display:block;
+  max-height:100%;
+}
+
+.project-img-container:hover .project-img-inner {
+  transform:rotateY(180deg);
+}
+
+.project-item-container > .project-text > h2 {
+  color:#FFF;
+  font-family:Arial;
+  font-size:3vw;
+  font-weight:600;
+}
+
 .project-item-container > img {
-  display: block;
-  margin-left: 1.5vw;
-  float: right;
+  display:block;
+  float:right;
+  margin-left:1.5vw;
+  max-height:100%;
 }
-.project-item-container > .project-text > .imgcontainer > img {
-  display: none;
+
+.imgcontainer > img {
+  display:none;
 }

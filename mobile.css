@@ -1,14 +1,15 @@
 @media only screen and (max-width: 1041px) {
 	section {
 		height: auto;
-		padding-bottom: 10em
+		padding-bottom: 2em;
+		border-width: 0;
 	}
 	section > .intro-container > h1 {
 		font-size: 5em;
 		margin-bottom: 5vw;
 	}
 	.portfolio-page {
-		padding-top: 10em;
+		padding-top: 0px;
 	}
 	.fa-github {
 		color: white;
@@ -20,10 +21,17 @@
 	}
 	.nav-container {
 		font-size: 2em;
+		display: none;
+	}
+	.project-img-container {
+		display: none;
 	}
 	.project-item-container {
 		padding: 0px 0px 0px 0px;
 		text-align: center;
+		height: auto;
+		width: auto;
+		margin-top: 5vw;
 	}
 	.landing-page > .intro-container > p {
 		font-size: 2em;
