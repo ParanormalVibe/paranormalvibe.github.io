@@ -11,7 +11,7 @@
 	.portfolio-page {
 		padding-top: 0px;
 	}
-	.social-media-container {
+	.social-media-container > * {
 		font-size: 5em;
 	}
 	.nav-container {
