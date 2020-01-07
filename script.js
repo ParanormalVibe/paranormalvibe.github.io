@@ -13,7 +13,6 @@ function callback (entries, observer) {
 			observer.unobserve(targetNode);
 			observer.observe(copyElement);
 			lastState.visible = true;
-			console.log("oof");
 		}
 		if (!entry.isIntersecting) {
 			lastState.visible = false;
